@@ -1,6 +1,6 @@
 import {test, expect} from '@playwright/test'
 import { delay } from 'rxjs-compat/operator/delay'
-import
+import x2
 
 test.beforeEach(async({page}) => {
     await page.goto('http://localhost:4200/')//go to method has promise type = Response, which means it waits for response of the page. We need to add await and async to the test.
